@@ -36,32 +36,17 @@ function showData(country) {
               div.innerHTML = `
                 <div class="rounded overflow-hidden border p-2">
             <img
-              src="${item.flag}"
-              class="w-100"
-              alt=""
-            />
+              src="${item.flag}"class="w-100" alt=""/>
           </div>
           
           <div
-            class="
-              py-2
-              d-flex
-              justify-content-between
-              align-items-center
-              d-md-block
-              text-md-center
-            "
-          >
+            class=" py-2 d-flex justify-content-between align-items-center d-md-block  text-md-center " >
            
             <button onclick="showDetails('${item.alpha3Code}')" class="btn btn-dark">Learn More</button>
           </div>
                 `;
-                countryContainer.appendChild(div);
-
- 
-                
-            });
-        
+                countryContainer.appendChild(div);    
+            });     
 }
 
 function showDetails(alpha3Code) {
@@ -77,12 +62,8 @@ const showCountryDetails = countries => {
         <h1>country:${countries.name}</h1>
         <p>city:${countries.capital}</p>
         <p>nativeName:${countries.nativeName}</p>
-        <p>native lan:${countries.languages[0].name}</p>
-        
-       
-        
+        <p>native lan:${countries.languages[0].name}</p>     
   </div>
-   
   `;
 }
 
